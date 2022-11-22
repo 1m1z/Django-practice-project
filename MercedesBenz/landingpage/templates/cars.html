@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+
+{% block gallery %}
+  {% for car in Carttitle %}
+    <div class="card col-4 gx-5" style="width: 18rem;">
+      <img src="{{car.CartImage.url}}" class="card-imgs-top" alt="عکس ماشین">
+      <div class="card-body"> 
+        <h5 class="card-title">
+            {{ car.CartTitle }}
+          
+        </h5>
+        <p class="card-text">{{ car.CartDescription}}</p>
+        <a href="#" class="btn btn-primary">{{ car.CartBtnTitle }}</a>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+
+{% block gallery %}
+    {% for motor in motordic %}
+        <div class="card col-4 gx-5 " style="width: 18rem;">
+            <img src="{{motor.MotorImage.url}}" class="card-imgs-top" alt="عکس ماشین">
+            <div class="card-body">
+            <h5 class="card-title">
+                {{ motor.MotorTitle }}
+            
+            </h5>
+            <p class="card-text">{{ motor.MotorDescription }}</p>
+            <a href="#" class="btn btn-primary">{{ motor.MotorBtnTitle }}</a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock  %}

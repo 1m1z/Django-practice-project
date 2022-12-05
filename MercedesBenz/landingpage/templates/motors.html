@@ -10,6 +10,12 @@
                 {{ motor.MotorTitle }}
             </h5>
             <p class="card-text">{{ motor.MotorDescription }}</p>
+
+            {% comment %}
+            برای نمایش دادن مقدار انتخابی از عبارت زیر استفاده میکنیم: 
+            get_BuyOption_display
+            {% endcomment %}
+            
             <a href="#" class="btn btn-primary">{{ motor.get_BuyOption_display }}</a>
             </div>
         </div>

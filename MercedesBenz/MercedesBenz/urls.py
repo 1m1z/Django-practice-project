@@ -3,11 +3,12 @@ from django.urls import path
 
 from posts.views import index, home
 from landingpage.views import indexcar, motorlistview
-from blog.views import Blog
+from blog.views import Bloglistview
 
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -15,7 +16,7 @@ urlpatterns = [
     path('home/', home),
     path('cars/', indexcar),
     path('motors/', motorlistview),
-    path('blog/' , Blog)
+    path('blog/' , Bloglistview)
 ]
 
 

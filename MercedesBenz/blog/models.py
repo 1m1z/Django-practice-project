@@ -10,4 +10,4 @@ class Blog(models.Model):
     BlogDescription=models.TextField(verbose_name="توضیحات مختصر")
 
     def __str__(self):
-        return self.BlogPic
+        return self.BlogName 

@@ -8,4 +8,4 @@ def Bloglistview(request):
         "BlogListDic":  bloglist
     }
 
-    return render(request , "bloglists.html" , context )
+    return render(request , "blog/bloglists.html" , context )

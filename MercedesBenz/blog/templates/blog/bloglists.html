@@ -1,10 +1,10 @@
-{% extends 'layout.html' %}
+{% extends 'blog/layout.html' %}
 
 
 {% block maincontentblog %}
   {% for bloglist in BlogListDic %}
     <div class="card col-4 gx-4" style="width: 18rem;">
-      <img src="{{bloglist.BlogPic}}" class="card-imgs-top" alt="عکس بلاگ">
+      <img src="{{bloglist.BlogPic.url}}" class="card-imgs-top" alt="عکس بلاگ">
       <div class="card-body"> 
         <h5 class="card-title">
             {{ bloglist.BlogName }}

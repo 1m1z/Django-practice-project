@@ -11,7 +11,7 @@ def indexcar(request):
         "Carttitle":car
     }
 
-    return render(request,"cars.html",context )
+    return render(request,"landingpage/cars.html",context )
     # return HttpResponse(template.render(context, request))
 
 
@@ -22,4 +22,4 @@ def motorlistview(request):
         "motordic" : motor
     }
 
-    return render(request,"motors.html",context)
+    return render(request,"landingpage/motors.html",context)

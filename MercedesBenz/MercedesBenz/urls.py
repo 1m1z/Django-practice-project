@@ -3,7 +3,7 @@ from django.urls import path
 
 from posts.views import index, home
 from landingpage.views import indexcar, motorlistview
-from blog.views import Bloglistview
+from blog.views import Bloglistview,BlogListDetailsVeiw
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -16,7 +16,8 @@ urlpatterns = [
     path('home/', home),
     path('cars/', indexcar),
     path('motors/', motorlistview),
-    path('blog/' , Bloglistview)
+    path('blog/' , Bloglistview),
+    path('blog/blogdetails/<int:post_id>' , BlogListDetailsVeiw)
 ]
 
 

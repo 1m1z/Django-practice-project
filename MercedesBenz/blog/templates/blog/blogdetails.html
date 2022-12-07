@@ -1,0 +1,14 @@
+{% extends 'blog/layout.html' %} 
+
+  {% for bloglist in BlogListDic %}
+    <div class="card col-4 gx-4" style="width: 18rem;">
+      <img src="{{bloglist.BlogPic.url}}" class="card-imsgs-top" alt="عکس بلاگ">
+      <div class="card-body"> 
+        <h5 class="card-title">
+            {{ bloglist.BlogName }}
+        </h5>
+        <p class="card-text">{{ bloglist.BlogName }}</p>
+        <a href="#" class="btn btn-primary">بیشتر</a>
+      </div>
+    </div>
+  {% endfor %}

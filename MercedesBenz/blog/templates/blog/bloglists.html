@@ -4,13 +4,20 @@
 {% block maincontentblog %}
   {% for bloglist in BlogListDic %}
     <div class="card col-4 gx-4" style="width: 18rem;">
+
+
+      <a href="/blog/blogdetails/{{ bloglist.id }}">
       <img src="{{bloglist.BlogPic.url}}" class="card-imgs-top" alt="عکس بلاگ">
+      </a>
+      
+      
       <div class="card-body"> 
         <h5 class="card-title">
             {{ bloglist.BlogName }}
         </h5>
         <p class="card-text">{{ bloglist.BlogName }}</p>
-        <a href="#" class="btn btn-primary">بیشتر</a>
+        
+        {% comment %} <a href="/blog/post/{{ blog.id }}" class="btn btn-primary">بیشتر</a> {% endcomment %}
       </div>
     </div>
   {% endfor %}

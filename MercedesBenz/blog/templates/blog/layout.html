@@ -50,13 +50,17 @@
     </div>
   </nav>
     
-  {% endblock %}
+{% endblock %}
 
 
 
   <div class="container row pt-5">
-    {% block maincontentblog %}{% endblock maincontentblog %}
+    {% block maincontentblog %}
+    
+    {% endblock %}
   </div>
 
-
+  {% comment %} <div class="container row pt-5">
+    {% block blogdetailsposts %}{% endblock blogdetailsposts %}
+  </div> {% endcomment %}
 </body

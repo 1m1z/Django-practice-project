@@ -8,7 +8,10 @@
     type="text/css"
     href="{% static '/css/bootstrap.css' %}"
     >
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
+
+
 <body>
 
 {% block mainheader %}
@@ -54,13 +57,13 @@
 
 
 
-  <div class="container row pt-5">
+  <div class="row pt-5">
     {% block maincontentblog %}
     
     {% endblock %}
   </div>
 
-  {% comment %} <div class="container row pt-5">
+  <div class="">
     {% block blogdetailsposts %}{% endblock blogdetailsposts %}
-  </div> {% endcomment %}
+  </div> 
 </body

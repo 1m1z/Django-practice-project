@@ -1,20 +1,24 @@
 {% extends 'blog/layout.html' %}
 
+<style>
 
-{% block maincontentblog %}
+</style>
+{% block maincontentblog %}s
   {% for bloglist in BlogListDic %}
-    {% comment %} <div class="card col-4 gx-4" style="width: 18rem;">
+  
+    <div class="card col-3 gx-4"> 
 
-      <img src="{{bloglist.BlogPic.url}}" class="card-imgs-top" alt="عکس بلاگ"> {% endcomment %}
+      <img src="{{bloglist.BlogPic.url}}" class="card-imgs-top" alt="عکس بلاگ"> 
       
       <div class="card-body"> 
-        <h5 class="card-title">
+        <h5 class="card-title" id="textpost">
             {{ bloglist.BlogName }}
         </h5>
-        {% comment %} <p class="card-text">{{ bloglist.BlogDescription }}</p> {% endcomment %}
-        
+        <p class="card-text">{{ bloglist.BlogDescription }}</p>
+        s
         <a href="/blog/blogdetails/{{ bloglist.id }}" class="btn btn-primary">بیشتر</a>
       </div>
     </div>
+  
   {% endfor %}
 {% endblock  %}

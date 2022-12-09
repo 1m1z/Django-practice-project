@@ -1,8 +1,12 @@
 {% extends 'blog/layout.html' %}
 
+{% block blogdetailsposts %}
 
-{% block maincontentblog %}
-  
-    {{ postdetails.BlogName }}sss
-  
+    <div class="text-center centered align-middle">
+        <img src="{{ postdetails.BlogPic.url }}" class="card-img-fluid w-25" alt="عکس پست" width="20px">
+
+        <h1>{{ postdetails.BlogName }}</h1>
+    </br><hr/>
+        <p> {{ postdetails.BlogDescription }} </p>
+    </div
 {% endblock  %}

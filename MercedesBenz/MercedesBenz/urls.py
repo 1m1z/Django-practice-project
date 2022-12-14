@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 
-from posts.views import index, home
+from posts.views import home,homemenu
 from landingpage.views import indexcar, motorlistview
 from blog.views import Bloglistview,BlogListDetailsVeiw
 
@@ -12,8 +12,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index),
-    path('home/', home),
+    path('', homemenu),
     path('cars/', indexcar),
     path('motors/', motorlistview),
     path('blog/' , Bloglistview),
